@@ -1,0 +1,175 @@
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8rem;
+}
+
+nav li {
+  margin-left: 2rem;
+  list-style-type: none;
+  margin-top: 1rem;
+  
+}
+
+.navigation {
+  background-color: #faba62;
+  padding: 1rem;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #171629;
+  padding: 1rem;
+}
+
+.masthead {
+  position: relative;
+  max-width: 100%;
+  background-size: cover;
+}
+
+.masthead img {
+  width: 100%;
+  background-size: cover;
+}
+
+footer{
+display: flex;
+justify-content: space-between;
+align-items: right;
+background-color: #171629;
+}
+
+
+.company-info{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  padding-left: 1.5rem;
+}
+
+.connect-social img{
+  max-width: 3rem;
+}
+
+.connect-social h4{
+  color: white;
+  padding-right: 2rem;
+}
+
+.article {
+  padding: 5%;
+}
+
+
+@media (min-width: 35rem) and (max-width: 80rem) {
+
+.article-01 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 10%;
+}
+
+.article-01 #lorem{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.article-01 p{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-top: 10%;
+}
+
+.article-02 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 10%;
+}
+
+.article-02 #lorem{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.article-02 p{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding-top: 10%;
+}
+
+}
+
+
+
+@media (min-width: 80rem) {
+body {
+      font-size: 1.25rem;
+  }
+
+.navigation {
+    display:flex;
+    flex-direction: column;
+  }
+
+.navigation .nav {
+      display: inline;
+  }
+
+  
+  .article-01 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 5%;
+    row-gap: 10%;
+  }
+  
+  .article-01 #lorem{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  
+  .article-01 p{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-top: 30%;
+  }
+  
+  .article-02 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 5%;
+    row-gap: 10%;
+  }
+  
+  .article-02 #lorem{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  
+  .article-02 p{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 30%;
+  }
+
+  .card-container{
+    column-count:3;
+    text-align:center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+
+  .card-container h3{
+    padding-bottom: 4rem;
+  }
+}
